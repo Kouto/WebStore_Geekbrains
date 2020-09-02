@@ -34,5 +34,16 @@ namespace WebStore_Geekbrains.Controllers
         {
             return View(_employees);
         }
+        public IActionResult EmployeeDetails(int id)
+        {
+            var employee = _employees.FirstOrDefault(x => x.Id == id);
+
+            if (employee==null)
+            {
+                return NotFound();
+            }
+
+            return View(employee);
+        }
     }
 }

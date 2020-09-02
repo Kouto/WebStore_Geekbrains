@@ -31,5 +31,25 @@ namespace WebStore_Geekbrains.Controllers
         {
             return View();
         }
+        public IActionResult Cart()
+        {
+            return View();
+        }        
+        public IActionResult Checkout()
+        {
+            return View();
+        }
+        public IActionResult Contact_us()
+        {
+            return View();
+        } 
+        public IActionResult Login()
+        {
+            return View();
+        }      
+        public IActionResult ProductDetails()
+        {
+            return View();
+        }
     }
 }
